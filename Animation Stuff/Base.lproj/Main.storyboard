@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Animation_Stuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTk-BS-0f7">
+                                <rect key="frame" x="128" y="253" width="119" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="119" id="LCf-BQ-ER4"/>
+                                    <constraint firstAttribute="height" constant="160" id="aDn-4J-igL"/>
+                                </constraints>
+                                <state key="normal" image="sushilogo.png"/>
+                                <connections>
+                                    <segue destination="Fmh-Xg-sNj" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="3nC-VP-1fZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.54117647059999996" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WTk-BS-0f7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cbF-6r-m3c"/>
+                            <constraint firstItem="WTk-BS-0f7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ffs-65-B7S"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="1ck-jB-w2G">
+            <objects>
+                <viewController id="Fmh-Xg-sNj" customClass="ModalViewController" customModule="Animation_Stuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GCU-gg-q1C"/>
+                        <viewControllerLayoutGuide type="bottom" id="BTi-ul-TLb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lWW-C5-LO7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3H-yM-PNT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="dismissButton:" destination="Fmh-Xg-sNj" eventType="touchUpInside" id="wjs-Ja-b6K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BR8-ry-M14">
+                                <rect key="frame" x="77" y="291" width="220" height="84"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="ayx-cW-Cac"/>
+                                    <constraint firstAttribute="height" constant="84" id="qbW-lc-RnI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Delicious! Want Some?"/>
+                                <connections>
+                                    <segue destination="r7Z-nO-QHt" kind="show" customClass="ScaleSegue" customModule="Animation_Stuff" customModuleProvider="target" id="w6q-HE-sH7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w3H-yM-PNT" secondAttribute="trailing" id="2h9-nk-fQj"/>
+                            <constraint firstItem="BTi-ul-TLb" firstAttribute="top" secondItem="w3H-yM-PNT" secondAttribute="bottom" id="H5P-pX-Rhz"/>
+                            <constraint firstItem="w3H-yM-PNT" firstAttribute="top" secondItem="lWW-C5-LO7" secondAttribute="top" id="LSH-s2-7ZH"/>
+                            <constraint firstItem="BR8-ry-M14" firstAttribute="centerY" secondItem="lWW-C5-LO7" secondAttribute="centerY" id="XSY-EW-k4e"/>
+                            <constraint firstItem="w3H-yM-PNT" firstAttribute="leading" secondItem="lWW-C5-LO7" secondAttribute="leading" id="kb6-aL-Rth"/>
+                            <constraint firstItem="BR8-ry-M14" firstAttribute="centerX" secondItem="lWW-C5-LO7" secondAttribute="centerX" id="ncA-w8-y9H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deliciousBtn" destination="BR8-ry-M14" id="8Qq-M0-hRk"/>
+                        <outlet property="dismissBtn" destination="w3H-yM-PNT" id="hsj-Zf-gou"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="be9-pk-Szw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="123.68815592203899"/>
+        </scene>
+        <!--Ask For Slide View Controller-->
+        <scene sceneID="rTh-zz-YMB">
+            <objects>
+                <viewController id="r7Z-nO-QHt" customClass="AskForSlideViewController" customModule="Animation_Stuff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5VC-IY-2ue"/>
+                        <viewControllerLayoutGuide type="bottom" id="fnZ-Ur-B0Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uCU-Za-Cp0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7eh-NM-Y7o">
+                                <rect key="frame" x="85" y="0.0" width="205" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sushilogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="qya-VN-8gp">
+                                        <rect key="frame" x="0.0" y="414" width="205" height="173"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="205" id="RI3-qI-nn8"/>
+                                            <constraint firstAttribute="height" constant="173" id="jTE-yw-p2P"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2B-JZ-fR0">
+                                        <rect key="frame" x="19" y="318" width="166" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cTl-IN-uX9"/>
+                                            <constraint firstAttribute="width" constant="166" id="wok-Zp-IfU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="19"/>
+                                        <state key="normal" title="OMG sushi is over"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" customClass="ScaleSegue" customModule="Animation_Stuff" customModuleProvider="target" id="xxg-hd-Kmm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9680230769" green="0.97760746379999997" blue="0.97760746379999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="205" id="EvZ-0U-KmN"/>
+                                    <constraint firstAttribute="trailing" secondItem="qya-VN-8gp" secondAttribute="trailing" id="F3r-48-kuT"/>
+                                    <constraint firstItem="e2B-JZ-fR0" firstAttribute="centerY" secondItem="7eh-NM-Y7o" secondAttribute="centerY" id="ZrD-p8-M1I"/>
+                                    <constraint firstItem="qya-VN-8gp" firstAttribute="leading" secondItem="7eh-NM-Y7o" secondAttribute="leading" id="pZW-DN-rtX"/>
+                                    <constraint firstItem="e2B-JZ-fR0" firstAttribute="centerX" secondItem="7eh-NM-Y7o" secondAttribute="centerX" id="ri8-Au-JFo"/>
+                                    <constraint firstAttribute="bottom" secondItem="qya-VN-8gp" secondAttribute="bottom" constant="80" id="uLi-tq-YC3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7eh-NM-Y7o" firstAttribute="centerX" secondItem="uCU-Za-Cp0" secondAttribute="centerX" id="0MP-Gt-4cB"/>
+                            <constraint firstItem="7eh-NM-Y7o" firstAttribute="top" secondItem="uCU-Za-Cp0" secondAttribute="topMargin" id="KT6-lm-vNn"/>
+                            <constraint firstItem="fnZ-Ur-B0Q" firstAttribute="top" secondItem="7eh-NM-Y7o" secondAttribute="bottom" id="XAX-R6-Abo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="centerView" destination="7eh-NM-Y7o" id="MU3-lC-ZMo"/>
+                        <outlet property="overbtn" destination="e2B-JZ-fR0" id="VBe-05-WGN"/>
+                        <outlet property="sushilogo" destination="qya-VN-8gp" id="x2V-hw-QaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gnc-3P-cI8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1008.8" y="951.27436281859082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sushilogo.png" width="357" height="477"/>
+    </resources>
+</document>
