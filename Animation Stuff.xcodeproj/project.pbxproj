@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF4CF3251E390F6B00918778 /* AskForSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CF3241E390F6B00918778 /* AskForSlideViewController.swift */; };
+		CF4CF3271E390F7D00918778 /* ScaleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF4CF3261E390F7D00918778 /* ScaleSegue.swift */; };
 		CF972F3E1E37B53700B5CF71 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF972F3D1E37B53700B5CF71 /* ModalViewController.swift */; };
-		CF972F421E37EB8400B5CF71 /* AskForSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF972F411E37EB8400B5CF71 /* AskForSlideViewController.swift */; };
 		CF972F461E37F7E400B5CF71 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = CF972F451E37F7E400B5CF71 /* upArrow.png */; };
 		CFF6288E1E369620001CFEAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6288D1E369620001CFEAD /* AppDelegate.swift */; };
 		CFF628901E369620001CFEAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6288F1E369620001CFEAD /* ViewController.swift */; };
@@ -19,7 +20,6 @@
 		CFF628AE1E369620001CFEAD /* Animation_StuffUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628AD1E369620001CFEAD /* Animation_StuffUITests.swift */; };
 		CFF628BC1E36967A001CFEAD /* sushi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CFF628BB1E36967A001CFEAD /* sushi.jpg */; };
 		CFF628BF1E369F05001CFEAD /* sushilogo.png in Resources */ = {isa = PBXBuildFile; fileRef = CFF628BE1E369F05001CFEAD /* sushilogo.png */; };
-		CFF628C11E36A37C001CFEAD /* ScaleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF628C01E36A37C001CFEAD /* ScaleSegue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF4CF3241E390F6B00918778 /* AskForSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AskForSlideViewController.swift; sourceTree = "<group>"; };
+		CF4CF3261E390F7D00918778 /* ScaleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleSegue.swift; sourceTree = "<group>"; };
 		CF972F3D1E37B53700B5CF71 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
-		CF972F411E37EB8400B5CF71 /* AskForSlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AskForSlideViewController.swift; path = ../AskForSlideViewController.swift; sourceTree = "<group>"; };
 		CF972F451E37F7E400B5CF71 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
 		CFF6288A1E369620001CFEAD /* Animation Stuff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Animation Stuff.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFF6288D1E369620001CFEAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +59,6 @@
 		CFF628AF1E369620001CFEAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFF628BB1E36967A001CFEAD /* sushi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sushi.jpg; sourceTree = "<group>"; };
 		CFF628BE1E369F05001CFEAD /* sushilogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sushilogo.png; sourceTree = "<group>"; };
-		CFF628C01E36A37C001CFEAD /* ScaleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScaleSegue.swift; path = ../ScaleSegue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +115,9 @@
 				CFF628961E369620001CFEAD /* LaunchScreen.storyboard */,
 				CFF628991E369620001CFEAD /* Info.plist */,
 				CFF6288D1E369620001CFEAD /* AppDelegate.swift */,
-				CF972F411E37EB8400B5CF71 /* AskForSlideViewController.swift */,
+				CF4CF3241E390F6B00918778 /* AskForSlideViewController.swift */,
 				CF972F3D1E37B53700B5CF71 /* ModalViewController.swift */,
-				CFF628C01E36A37C001CFEAD /* ScaleSegue.swift */,
+				CF4CF3261E390F7D00918778 /* ScaleSegue.swift */,
 				CFF6288F1E369620001CFEAD /* ViewController.swift */,
 			);
 			path = "Animation Stuff";
@@ -293,9 +293,9 @@
 			files = (
 				CF972F3E1E37B53700B5CF71 /* ModalViewController.swift in Sources */,
 				CFF628901E369620001CFEAD /* ViewController.swift in Sources */,
+				CF4CF3271E390F7D00918778 /* ScaleSegue.swift in Sources */,
 				CFF6288E1E369620001CFEAD /* AppDelegate.swift in Sources */,
-				CF972F421E37EB8400B5CF71 /* AskForSlideViewController.swift in Sources */,
-				CFF628C11E36A37C001CFEAD /* ScaleSegue.swift in Sources */,
+				CF4CF3251E390F6B00918778 /* AskForSlideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
